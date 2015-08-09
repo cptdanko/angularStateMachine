@@ -1,0 +1,27 @@
+<html ng-app="fsmTest">
+	<head>
+		<script src="angular.min.js"></script>
+    	<script src="controller.js"> </script>
+    	<script src="service/stateMachine.js"> </script>
+	</head>
+	<body>
+		<div ng-controller="StateController">
+			<div style="color:red;" ng-show="state.error">
+				{{errorMessage}}
+			</div>
+			<div id="blue" style="background-color:beige;width:100px;height:100px;font-weight:bold;" ng-show="state.bVisible"> 
+		      <p>Something</p>
+		     </div>
+		     <div id="yellow" style="background-color:yellow;width:100px;height:100px;font-weight:bold;" ng-show="state.yVisible"> 
+		      <p>Something</p>
+		     </div>
+		     <div id="red" style="background-color:red;width:100px;height:100px;font-weight:bold;" ng-show="state.rVisible">
+		      <p>Something</p>
+		     </div>
+		    <button ng-click="next()"> Next state </button>
+			<button ng-click="prev()"> Previous state </button>
+			<button ng-click="errorState()"> Show error </button>
+			<button ng-click="resetError()"> Resolve error </button>
+		</div>
+	</body>
+</html>
