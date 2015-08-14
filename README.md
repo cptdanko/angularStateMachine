@@ -1,5 +1,6 @@
 # A state machine in AngularJS
 
-I will be writing a blog post soon which will put all the code here into perspective.
+The idea behind this code base is to demonstrate the concept of isolating the state of a template from a controller via a state machine. So this way a template state can be independant of the controller's logic. 
 
-The objective of this is to abstract the concept of template state from the controller.
+I will be writing a detailed blog post soon which will explain all the concepts in more detail.
+
